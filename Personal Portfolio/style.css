@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(33, 14, 87);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+nav ul li a:hover {
+    color: aqua;
+    /* font-size:16px; */
+    /* font-weight: 600; */
+}
+
+.left {
+    font-size: 1.2rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    /* margin: 23px 0; */
+    /* width: 100%; */
+}
+
+.firstSection div {
+    width: 100%;
+}
+
+.myname {
+    color: rgb(201, 38, 201);
+    font-weight: 700;
+}
+
+.leftsection {
+    /* background-color: yellow; */
+    width: 30%;
+    font-size: 1.3rem;
+    padding-left: 125px;
+    padding-top: 55px;
+}
+
+.rightsection {
+    /* background-color: red; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rightsection img {
+    width: 350px;
+    position: relative;
+    left: 25px;
+    justify-content: center;
+}
+
+#element {
+    color: yellow;
+    font-weight: bold;
+}
+
+.secondSection{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.secondSection .grey{
+color:gray;
+/* margin-left: 20px; */
+
+}
+
+.secondSection .workexp{
+max-width:95vw;
+/* margin-left: auto; */
+}
+
+.points{
+    /* margin-left: 50px; */
+
+}
+
+ul.a {
+    list-style-type: circle;
+    /* margin-left: 80px; */
+
+}
+
+.secondSection{
+    max-width:80vw;
+    margin:auto;
+/* background-color: aqua; */
+}
+
+.secondSection .box{
+    /* background-color:aquamarine; */
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.secondSection .hline{
+    /* background: white; */
+    background-color:aquamarine;
+    width:80vw;
+    height:2px;
+    margin:15px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.secondSection .vertical{
+    /* background: white; */
+    background-color:red;
+    width:1px;
+    height:66px;
+    margin:0px 9%;
+    /* position: absolute; */
+    /* display: block; */
+}
+
+.vertical-title{
+    position: relative;
+    top: 60px;
+    left: 3px;
+    /* display: none; */
+}
+
+
+.vertical-desc{
+    color:gray;
+    font-size: 0.8em;
+    /* display: none; */
+    /* overflow: auto; */
+}
+
+footer{
+    /* display: none; */
+    /* display: flex;
+    justify-content: flex-end; */
+    position: relative;
+    bottom: -50px
+}
+.footer{
+   
+    position: relative;
+    top: 320px;
+    background-color: rgb(50, 0, 70);
+    width: 100vw;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:20px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.footer-box ul {
+    display:inline-block;
+    justify-content: center;
+}
+
+.footer-box ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+.footer-box ul li a:hover {
+    color: aqua;
+}
+
+@media screen and (max-width: 1030px) {
+  body{
+    /* background-color: brown; */
+  }
+}
+@media screen and (max-width: 1023px) {
+    .secondSection .box{
+        /* flex-direction: column; */
+    }
+    .secondSection .hline{
+        flex-direction: column;
+    }
+    .secondSection .vertical{
+        position: relative;
+        /* left: 3px; */
+        /* height:fit-content; */
+        margin: 0px 2%
+    }
+    .vertical-title{
+    left:7px;
+    width: max-content;
+    height: 70px;
+    /* height: 45px; */
+    }
+    .vertical-desc{
+
+    }
+}
+@media screen and (max-width: 520px) {
+  nav{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+    .firstSection {
+        flex-direction: column-reverse;
+        }
+
+        .leftsection {
+            padding-top: 0px;
+            padding-left: 44px;
+        }
+        .rightsection img{
+            left: 0px;
+        }
+}
+
+@media screen and (max-width: 320px) {
+    nav ul li {
+    margin: 0 15px;
+}
+}
+
