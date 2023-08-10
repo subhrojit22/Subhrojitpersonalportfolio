@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 80px;
     background-color: rgb(33, 14, 87);
 }
 
@@ -34,7 +34,7 @@ nav ul li a {
     color: rgb(255, 255, 255)
 }
 
-nav ul li a:hover {
+nav .right ul li a:hover {
     color: aqua;
     /* font-size:16px; */
     /* font-weight: 600; */
@@ -47,13 +47,14 @@ nav ul li a:hover {
 .firstSection {
     display: flex;
     justify-content: space-around;
-    flex-direction:row;
+    flex-direction: row;
     /* margin: 23px 0; */
     /* width: 100%; */
 }
 
 .firstSection div {
-    width: 100%;
+    /* width: 100%; */
+    /* width:max-content; */
 }
 
 .myname {
@@ -75,7 +76,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .rightsection img {
@@ -90,22 +90,23 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.secondSection{
+.secondSection {
     margin-top: 20px;
     padding-top: 20px;
 }
-.secondSection .grey{
-color:gray;
-/* margin-left: 20px; */
+
+.secondSection .grey {
+    color: gray;
+    /* margin-left: 20px; */
 
 }
 
-.secondSection .workexp{
-max-width:95vw;
-/* margin-left: auto; */
+.secondSection .workexp {
+    max-width: 95vw;
+    /* margin-left: auto; */
 }
 
-.points{
+.points {
     /* margin-left: 50px; */
 
 }
@@ -116,38 +117,39 @@ ul.a {
 
 }
 
-.secondSection{
-    max-width:80vw;
-    margin:auto;
-/* background-color: aqua; */
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    /* background-color: aqua; */
 }
 
-.secondSection .box{
+.secondSection .box {
     /* background-color:aquamarine; */
     /* display: flex; */
     /* flex-direction: row; */
 }
-.secondSection .hline{
+
+.secondSection .hline {
     /* background: white; */
-    background-color:aquamarine;
-    width:80vw;
-    height:2px;
-    margin:15px 0px;
+    background-color: aquamarine;
+    width: 80vw;
+    height: 2px;
+    margin: 15px 0px;
     display: flex;
     flex-direction: row;
 }
 
-.secondSection .vertical{
+.secondSection .vertical {
     /* background: white; */
-    background-color:red;
-    width:1px;
-    height:66px;
-    margin:0px 9%;
+    background-color: red;
+    width: 1px;
+    height: 66px;
+    margin: 0px 9%;
     /* position: absolute; */
     /* display: block; */
 }
 
-.vertical-title{
+.vertical-title {
     position: relative;
     top: 60px;
     left: 3px;
@@ -155,39 +157,39 @@ ul.a {
 }
 
 
-.vertical-desc{
-    color:gray;
+.vertical-desc {
+    color: gray;
     font-size: 0.8em;
     /* display: none; */
     /* overflow: auto; */
 }
 
-footer{
+footer {
     /* display: none; */
     /* display: flex;
     justify-content: flex-end; */
     position: relative;
     bottom: -50px
 }
-.footer{
-   
+
+.footer {
     position: relative;
     top: 320px;
     background-color: rgb(50, 0, 70);
     width: 100vw;
 }
 
-.footer-box{
+.footer-box {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding:20px;
+    padding: 20px;
     font-size: 12px;
     width: 100%;
 }
 
 .footer-box ul {
-    display:inline-block;
+    display: inline-block;
     justify-content: center;
 }
 
@@ -206,55 +208,218 @@ footer{
 }
 
 @media screen and (max-width: 1030px) {
-  body{
-    /* background-color: brown; */
-  }
+    body {
+        /* background-color: brown; */
+    }
 }
+
 @media screen and (max-width: 1023px) {
-    .secondSection .box{
+    .secondSection .box {
         /* flex-direction: column; */
     }
-    .secondSection .hline{
+
+    .secondSection .hline {
         flex-direction: column;
     }
-    .secondSection .vertical{
+
+    .secondSection .vertical {
         position: relative;
         /* left: 3px; */
         /* height:fit-content; */
         margin: 0px 2%
     }
-    .vertical-title{
-    left:7px;
-    width: max-content;
-    height: 70px;
-    /* height: 45px; */
-    }
-    .vertical-desc{
 
+    .vertical-title {
+        left: 7px;
+        width: max-content;
+        height: 70px;
+        /* height: 45px; */
+    }
+
+    .vertical-desc {}
+}
+
+@media screen and (max-width: 520px) {
+    nav {
+        flex-direction: column;
     }
 }
-@media screen and (max-width: 520px) {
-  nav{
-    flex-direction: column;
-  }
-}
+
 @media screen and (max-width: 425px) {
     .firstSection {
         flex-direction: column-reverse;
-        }
+    }
 
-        .leftsection {
-            padding-top: 0px;
-            padding-left: 44px;
-        }
-        .rightsection img{
-            left: 0px;
-        }
+    .leftsection {
+        padding-top: 0px;
+        padding-left: 44px;
+        width: 100%;
+    }
+
+    .rightsection img {
+        left: 0px;
+    }
+    .rightsection{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 320px) {
     nav ul li {
-    margin: 0 15px;
-}
+        margin: 0 15px;
+    }
 }
 
+/* contact us start ----------------------------------------------*/
+.bodycontactus {
+    /* font-family: Arial, sans-serif; */
+    background-color: rgb(0, 0, 33);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+.cusfs {
+    height: 565px;
+    padding: 20px;
+}
+
+@media  (max-width: 1232px) {
+    .bodycontactus {
+        /* background-color: red; */
+    }
+}
+@media (max-width: 1232px) {
+    /* 425px */
+    .cus-main{
+        display: flex;
+        justify-content: center;
+    }
+    .cusfs {
+        flex-direction: column;
+        /* background-color: rgb(7, 33, 0); */
+        margin-top: 150px;
+        padding: 0px;
+        width: fit-content;
+    }
+
+    .leftsection_developer-img img {
+        left: 0px;
+        top: 50px;
+    }
+
+    .contactdetails {
+        /* text-align: center; */
+    }
+    .leftsection_developer-img{
+        width:80%;
+        /* background-color: #007bff; */
+    }
+    .contactussection {
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+    .firstSection div{
+        width: 100%;
+    }
+}
+
+.contactdetails {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 200px; /* Set explicit height */
+    position: relative;
+    top:40px;
+    padding: 30px;
+    width:max-content;
+}
+.mobileno,
+.whatsappno,  
+.email {
+  align-self: center; /* Align each child separately */ 
+}
+
+.contactussection {
+    margin-top: 40px;
+    width:400px;
+}
+
+
+.container {
+    max-width: 350px;
+    /* width:fit-content; */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+
+.leftsection_developer-img {
+    /* background-color: red; */
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leftsection_developer-img img {
+    width: 350px;
+    position: relative;
+    left: 25px;
+    justify-content: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* contact us end */
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+/* project page start */
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:40px;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+.project-container div {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+/* project page end */
